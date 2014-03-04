@@ -16,7 +16,8 @@ _LOG_INSTALLED_PACKAGES = settings.get_value('CLIENT', 'log_installed_packages',
 _DEFAULT_COMMANDS_TO_LOG_PER_TEST = []
 _DEFAULT_COMMANDS_TO_LOG_PER_BOOT = [
     "lspci -vvnn", "gcc --version", "ld --version", "mount", "hostname",
-    "uptime", "dmidecode",
+    "uptime", "dmidecode", "ifconfig -a", "brctl show",
+    "numactl --hardware show"
 ]
 _DEFAULT_COMMANDS_TO_LOG_BEFORE_ITERATION = []
 _DEFAULT_COMMANDS_TO_LOG_AFTER_ITERATION = []
